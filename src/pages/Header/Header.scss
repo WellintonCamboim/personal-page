@@ -1,0 +1,51 @@
+$primary-color: #3498db;
+$secondary-color: #c6e0f9;
+$background-color: #002839;
+
+.header {
+  background-color: $background-color;
+  padding-top: 20px;
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+
+      .nav-item {
+        a {
+          text-decoration: none;
+          color: $secondary-color;
+          font-size: 18px;
+          font-weight: bold;
+          transition: color 0.3s;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .navbar {
+      .nav-list {
+        flex-direction: column;
+        align-items: center;
+
+        .nav-item {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+}

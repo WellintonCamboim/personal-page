@@ -1,0 +1,55 @@
+$primary-color: #3498db;
+$secondary-color: #c6e0f9;
+$background-color: #002839;
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: $background-color;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: $secondary-color;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.dev-image {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.text {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-section,
+  .right-section {
+    flex: none;
+    min-width: 100%;
+  }
+
+  .profile-photo {
+    width: 150px;
+  }
+}
