@@ -1,0 +1,20 @@
+$background-color: #002839;
+$secondary-color: #c6e0f9;
+
+.experience {
+  background-color: $background-color;
+  padding: 40px 20px;
+  text-align: center;
+
+  h2 {
+    color: $secondary-color;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+.experience-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
